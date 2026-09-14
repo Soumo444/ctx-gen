@@ -1,71 +1,25 @@
-# Ctx Gen
+# ⚡ ctx-gen
 
-Local Context Engine for AI coding assistants — scans your project and generates a clean, token-optimized project-context.md
+> **Local Context Engine for AI coding assistants** — scans your project and generates a clean, token-optimized `project-context.md`.
 
-## 🛠️ Tech Stack
+[![npm version](https://img.shields.io/npm/v/@soumo444/ctx-gen.svg?style=flat-square)](https://www.npmjs.com/package/@soumo444/ctx-gen)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![Node.js Version](https://img.shields.io/badge/node-%3E%3D18-brightgreen.svg?style=flat-square)](https://nodejs.org)
 
-- **Language:** Node.js (TypeScript)
-- **Node dependencies:** 3
+---
 
-## 📁 Project Structure
+## 🌟 Features
 
-```
-ctx-gen/
-├── bin/
-│   └── ctx-gen.js
-├── src/
-│   ├── detectors/
-│   │   ├── license.ts
-│   │   └── projectType.ts
-│   ├── parsers/
-│   │   ├── codeSymbols.ts
-│   │   ├── envExample.ts
-│   │   ├── importGraph.ts
-│   │   ├── keyFiles.ts
-│   │   ├── packageJson.ts
-│   │   ├── pythonDeps.ts
-│   │   └── schema.ts
-│   ├── utils/
-│   │   └── treeUtils.ts
-│   ├── cli.ts
-│   ├── contextBuilder.ts
-│   ├── docsGenerator.ts
-│   ├── generator.ts
-│   ├── ignoreRules.ts
-│   ├── quickStart.ts
-│   ├── scanner.ts
-│   ├── tokenEstimator.ts
-│   ├── treeBuilder.ts
-│   ├── types.ts
-│   └── watcher.ts
-├── .ctxignore.example
-├── .gitignore
-├── LICENSE
-├── package.json
-├── README.md
-└── tsconfig.json
-```
+- **Token-Optimized:** Generates clean context tailored for AI coding tools like Cursor, GitHub Copilot, and Claude.
+- **Smart Scanners:** Automatically detects project types, licenses, dependencies, and code symbols.
+- **Ignore Rules:** Fully configurable with custom ignore patterns (`.ctxignore`).
+- **Zero Config Quick Start:** Works instantly out of the box with `npx`.
+
+---
 
 ## 🚀 Quick Start
 
-**Install Node dependencies**
+You can run it directly without installing permanently using `npx`:
+
 ```bash
-npm install
-```
-
-**Run in development mode**
-```bash
-npm run dev
-```
-
-**Build for production**
-```bash
-npm run build
-```
-
-## 📄 License
-
-MIT
-
----
-*README scaffolded by [ctx-gen](https://github.com/yourname/ctx-gen) `docs` — review, edit, and make it your own before publishing.*
+npx @soumo444/ctx-gen
