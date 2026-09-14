@@ -1,0 +1,5 @@
+node_modules/
+dist/
+project-context.md
+*.log
+.DS_Store

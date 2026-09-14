@@ -1,0 +1,20 @@
+# .ctxignore
+# ----------------------------------------------------------------
+# Same syntax as .gitignore. Copy this file to ".ctxignore" in your
+# project root and customize it. Patterns here are ADDED on top of
+# ctx-gen's built-in defaults (node_modules, .git, dist, venv, etc.)
+# — you don't need to re-list those.
+# ----------------------------------------------------------------
+
+# Folders
+fixtures/
+scripts/one-off/
+
+# Specific files
+CHANGELOG.md
+*.snap
+
+# Test data / fixtures that add noise, not signal
+**/__mocks__/
+**/*.test.ts
+**/*.spec.ts

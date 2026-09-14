@@ -1,0 +1,54 @@
+{
+  "name": "@soumo444/ctx-gen",
+  "version": "2.0.0",
+  "description": "Local Context Engine for AI coding assistants — scans your project and generates a clean, token-optimized project-context.md",
+  "keywords": [
+    "ai",
+    "cli",
+    "context",
+    "cursor",
+    "copilot",
+    "claude",
+    "codegen",
+    "developer-tools",
+    "llm"
+  ],
+  "homepage": "https://github.com/soumo444/ctx-gen#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soumo444/ctx-gen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/soumo444/ctx-gen/issues"
+  },
+  "license": "MIT",
+  "author": "Soumo <soumo444@gmail.com>",
+  "main": "dist/cli.js",
+  "bin": {
+    "ctx-gen": "bin/ctx-gen.js"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run build",
+    "dev": "ts-node src/cli.ts",
+    "start": "node bin/ctx-gen.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^15.0.0",
+    "ignore": "^7.0.9"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.1",
+    "typescript": "^5.6.0"
+  }
+}
